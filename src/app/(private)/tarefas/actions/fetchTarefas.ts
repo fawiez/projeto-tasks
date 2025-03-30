@@ -62,15 +62,17 @@ export function useDeleteTarefa() {
   });
 }
 
-async function deleteTarefa(id: number) {
+async function deleteTarefa(id: string) { 
   const res = await fetch(`/api/tarefas/${id}`, {
     method: "DELETE",
     headers: {
       "Content-Type": "application/json",
     },
   });
+
   if (!res.ok) {
-    throw new Error("Erro ao deletear tarefa");
+    throw new Error("Erro ao deletar tarefa");
   }
+
   return res.json();
 }
