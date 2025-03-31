@@ -58,7 +58,7 @@ export default function TarefasSection() {
             name="conteudo"
             value={conteudo}
             onChange={(e) => setConteudo(e.target.value)}
-            placeholder="Conteúdo da notícia"
+            placeholder="Conteúdo da tarefa"
             className="border-2 border-gray-300 focus:border-green-500 focus:ring-2 focus:ring-green-300 p-3 rounded-lg w-full text-black placeholder-gray-500 focus:outline-none transition-all"
           />
           <button type="submit" className="p-2 bg-green-500 rounded-lg hover:bg-green-600 transition">
